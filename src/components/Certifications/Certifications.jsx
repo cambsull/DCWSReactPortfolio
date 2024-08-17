@@ -1,9 +1,9 @@
 import React from 'react';
 import CertificationCard from '../CertificationCard/CertificationCard.jsx';
-import certificationImage1 from '../../assets/projectImage1.png';
-import certificationImage2 from '../../assets/projectImage2.png';
-import certificationImage3 from '../../assets/projectImage3.png';
-import certificationImage4 from '../../assets/projectImage4.png';
+import certImage1 from '../../assets/certImage1.png';
+import certImage2 from '../../assets/certImage2.png';
+import certImage3 from '../../assets/certImage3.png';
+import certImage4 from '../../assets/certImage4.png';
 
 import './Certifications.css';
 
@@ -12,32 +12,32 @@ function Certifications() {
 
     const certificationData = [
         {
-            title: 'Aquifer PE',
-            issuer: '',
-            description: 'Aquifer PE is a recruitment platform focused on the engineering sector.',
-            image: certificationImage1,
-            link: 'https://aquiferpe.com'
+            title: 'Python for Everybody Specialization',
+            issuer: 'University of Michigan',
+            description: 'Via Prof. Charles Severance. Python, Data Structures, Algorithms, APIs, Databases',
+            image: certImage1,
+            link: 'https://www.coursera.org/account/accomplishments/specialization/MSRRE3DAVK4G'
         },
         {
-            title: 'Lewis-Clark Valley Christmas Bird Count',
-            issuer: '',
-            description: 'This is the homepage for the popular Christmas Bird Count program in the Lewis-Clark Valley, which now serves over 61,000 people!',
-            image: certificationImage2,
-            link: 'https://lewistoncbc.netlify.app/'
+            title: 'Front-End Engineer Professional Certification',
+            issuer: 'Codecademy',
+            description: 'HTML, CSS, JavaScript, Git & GitHub, Web Design, React, Redux, Built Tools, Data Structures, APIs, Algorithms',
+            image: certImage2,
+            link: 'https://www.codecademy.com/profiles/cgsullivan1/certificates/2682884a0719474f96407efe432fdd87'
         },
         {
-            title: 'Steam Web API Library',
-            issuer: '',
-            description: 'The Steam Web API Library (or swalib) is an API wrapper library written in JavaScript that makes it much easier to work with Steam\'s Web API. It has been used in over 250 projects!',
-            image: certificationImage3,
-            link: 'https://www.npmjs.com/package/swalib'
+            title: 'Learn WebSockets Course',
+            issuer: 'Codecademy',
+            description: 'Websockets and their use in networked applications',
+            image: certImage3,
+            link: 'https://www.codecademy.com/profiles/cgsullivan1/certificates/d0f004b5ab60b2bda59b6e38892b931b'
         },
         {
-            title: 'ADHD Recipe Finder',
-            issuer: '',
-            description: 'The ADHD Recipe Finder (still in development) is a free tool that uses the Edamam API to search over 900,000 recipes, and then sorts them based on an algorithm that determines their relative complexity.',
-            image: certificationImage4,
-            link: 'https://github.com/cambsull/adhdRecipeFinder'
+            title: 'Foundational C# with Microsoft',
+            issuer: 'Microsoft',
+            description: 'C#, C# as a backend language, Object-Oriented Programming concepts',
+            image: certImage4,
+            link: 'https://www.freecodecamp.org/certification/cambsull/foundational-c-sharp-with-microsoft'
         }
     ];
 
