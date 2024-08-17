@@ -1,0 +1,58 @@
+import React from 'react';
+import ProjectCard from '../ProjectCard/ProjectCard.jsx';
+import projectImage1 from '../../assets/projectImage1.png';
+import projectImage2 from '../../assets/projectImage2.png';
+import projectImage3 from '../../assets/projectImage3.png';
+import projectImage4 from '../../assets/projectImage4.png';
+
+import './Projects.css';
+
+function Projects() {
+
+    const projectData = [
+        {
+            title: 'Aquifer PE',
+            description: 'Aquifer PE is a recruitment platform focused on the engineering sector.',
+            image: projectImage1,
+            link: 'https://aquiferpe.com'
+        },
+        {
+            title: 'Lewis-Clark Valley Christmas Bird Count',
+            description: 'This is the homepage for the popular Christmas Bird Count program in the Lewis-Clark Valley, which now serves over 61,000 people!',
+            image: projectImage2,
+            link: 'https://lewistoncbc.netlify.app/'
+        },
+        {
+            title: 'Steam Web API Library',
+            description: 'The Steam Web API Library (or swalib) is an API wrapper library written in JavaScript that makes it much easier to work with Steam\'s Web API. It has been used in over 250 projects!',
+            image: projectImage3,
+            link: 'https://www.npmjs.com/package/swalib'
+        },
+        {
+            title: 'ADHD Recipe Finder',
+            description: 'The ADHD Recipe Finder (still in development) is a free tool that uses the Edamam API to search over 900,000 recipes, and then sorts them based on an algorithm that determines their relative complexity.',
+            image: projectImage4,
+            link: 'https://github.com/cambsull/adhdRecipeFinder'
+        }
+    ];
+
+    return (
+        <div id="projects">
+            <h2>Projects</h2>
+            <div className="projectCardDisplay">
+                {projectData.map((project, index) => (
+                    <ProjectCard 
+                    key={index}
+                    title={project.title}
+                    description={project.description}
+                    image={project.image}
+                    link={project.link}
+                    />
+
+                ))}
+            </div>
+        </div>
+    );
+}
+
+export default Projects;

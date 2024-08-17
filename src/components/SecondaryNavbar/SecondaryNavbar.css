@@ -1,0 +1,13 @@
+.secondaryNavbarSmallestMobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.secondaryNavbarSmallestMobile i {
+    color: #fff;
+    font-size: 1.5rem;
+}

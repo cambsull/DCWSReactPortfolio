@@ -1,0 +1,26 @@
+.projectCard {
+ width: 100%;
+ margin: auto;
+ text-align: center;
+ border-bottom: 1px solid white;
+}
+
+.projectCardImage {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.projectCardImage img {
+    width: 80%;
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+}
+
+.projectButton {
+    margin-bottom: 8px;
+    height: 2rem;
+    width: 8rem;
+
+}
+
