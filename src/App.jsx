@@ -3,6 +3,7 @@ import Certifications from './components/Certifications/Certifications.jsx';
 import Header from './components/Header/Header';
 import Projects from './components/Projects/Projects.jsx';
 import SecondaryNavbar from './components/SecondaryNavbar/SecondaryNavbar';
+import DesktopContent from './components/DesktopContent/DesktopContent.jsx';
 
 import { useState } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
@@ -11,7 +12,8 @@ import './App.css';
 
 
 // TODO: Reduce image size
-// TODO: Non-mobile designs
+// TODO: Non-mobile designs (DesktopContent)
+// TODO: iPad portrait mode and other similar sizes
 
 function App() {
 
@@ -34,7 +36,7 @@ function App() {
   return (
     <>
       <Header />
-      <SecondaryNavbar sectionChange={handleChangeDisplay} />
+      <SecondaryNavbar sectionChange={handleChangeDisplay} activeSection={sectionToDisplay} />
       <div className={`background-blur ${backgroundActive ? 'background-blur-active' : ''}`} />
       <TransitionGroup component={null}>
         {sectionToDisplay === 'projects' && (
@@ -71,6 +73,7 @@ function App() {
           </CSSTransition>
         )}
       </TransitionGroup>
+      <DesktopContent />
     </>
   );
 }

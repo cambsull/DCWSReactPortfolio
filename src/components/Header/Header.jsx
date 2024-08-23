@@ -21,7 +21,7 @@ function Header() {
                     </a>
                 </div>
             </div>
-            
+
             <div className="headerContainerSmallMobile">
                 <div className="smallMobileNavbar">
                     <a href="https://digitalchemistwebstudio.com" className="logoLink">
@@ -39,11 +39,22 @@ function Header() {
             </div>
 
             <div className="headerContainer">
-                <div className="logoContainer">
-                    <div className="logo">
-                        <img src={logo} alt="Logo" />
-                    </div>
+                <div className="navbar">
+    
+                        <div className="logo">
+                            <img src={logo} alt="Logo" />
+                        </div>
                 </div>
+                <div className="navbarIcons">
+       
+                    <a href="https://github.com/cambsull" className="logoLink">
+                        <i className="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/cambria-sullivan-ab3647a6/">
+                        <i className="fab fa-linkedin"></i>
+                    </a>
+                </div>
+
             </div>
         </>
     )

@@ -1,15 +1,107 @@
-.secondaryNavbarSmallestMobile {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-bottom: 1px solid white;
-    padding-bottom: 2px;
-    padding-top: 2px;
-    background-color: #4C42A3;
-    border-radius: 10px;
+@media only screen and (max-width: 767px) {
+    .secondaryNavbar {
+        display: none;
+    }
+
+    .secondaryNavbarSmallestMobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid white;
+        padding-bottom: 2px;
+        padding-top: 2px;
+        background-color: #4C42A3;
+        border-radius: 10px;
+    }
+
+    .secondaryNavbarSmallestMobile i {
+        color: #fff;
+        font-size: 1.5rem;
+    }
 }
 
-.secondaryNavbarSmallestMobile i {
-    color: #fff;
-    font-size: 1.5rem;
+@media only screen and (min-width: 768px) {
+    
+    .secondaryNavbarSmallestMobile i {
+     display: none;
+    }
+
+    .secondaryNavbarSmallestMobile {
+        display: none;
+    }
+
+    .secondaryNavbar {
+        display: none;
+    }
+
+
+
+    /*
+    .navButton {
+        background-color: #6D52FF; 
+        color: white;
+        border: none;
+        border-radius: 12px;
+        padding: 15px 30px;
+        font-size: 1.25rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+      
+ 
+      .navButton:hover {
+        background-color: #7f63ff; 
+        transform: translateY(-2px);
+      }
+   
+      .navButton.active {
+        background-color: #FFFFFF; 
+        color: #4C42A3;
+        font-weight: bold;
+        transform: translateY(-2px);
+      }
+      
+    .secondaryNavbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid white;
+        padding: 10px 20px;
+        background-color: #4C42A3;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .secondaryNavbar div {
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondaryNavbar i {
+        color: #fff;
+        font-size: 1.5rem;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .secondaryNavbar h2 {
+        color: #fff;
+        font-size: 1.2rem;
+        margin: 0;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .secondaryNavbar i:hover,
+    .secondaryNavbar h2:hover {
+        color: #e0e0e0;
+    }
+
+    .secondaryNavbar .active {
+        color: #2C2A4A;
+        font-weight: bold;
+    }
+
+    */
+    
 }
