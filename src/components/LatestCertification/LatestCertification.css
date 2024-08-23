@@ -1,0 +1,26 @@
+.latestCertificationCard {
+    display: flex;
+    width: 100%;
+}
+
+.certificationCardDesktop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #6D52FF;
+    border-radius: 18px;
+}
+
+.certificationCardDesktopImage {
+    width: 80%;
+    border-radius: 12px;
+}
+
+.certificationCardDesktopContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+}

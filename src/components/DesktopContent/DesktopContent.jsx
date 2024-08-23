@@ -1,5 +1,7 @@
 import './DesktopContent.css';
 import profilePic from '../../assets/profilePic.jpg';
+import LatestProject from '../LatestProject/LatestProject.jsx';
+import LatestCertification from '../LatestCertification/LatestCertification.jsx';
 
 function DesktopContent() {
     return(
@@ -15,10 +17,16 @@ function DesktopContent() {
                 <h2>Building software that helps communities connect and solves real-world problems</h2>
                </div>
                <div className="desktopSpacer"></div>
+               <div className="latestContainer">
+                    <div className="latestProject">
+                        <LatestProject />
+                    </div>
+                    <div className="latestCertification">
+                        <LatestCertification />
+                    </div>
+               </div>
             </div>
         </div>
-
-
     </div>
         )
 }
