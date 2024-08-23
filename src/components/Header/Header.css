@@ -40,7 +40,7 @@
     
 }
 
-@media only screen and (min-width: 315px) and (max-width: 767px) and (min-height: 628px) {
+@media only screen and (min-width: 315px) and (max-width: 1199px) and (min-height: 628px) {
     .headerContainer {
         display: none;
     }
@@ -126,7 +126,7 @@
     
 }
 
-@media only screen and (min-width: 768px) and (max-height: 300px) {
+@media only screen and (min-width: 1200px) and (max-height: 300px) {
     .headerContainer {
         display: flex;
         flex-direction: row;
@@ -173,7 +173,7 @@
 
     
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     .headerContainerSmallestMobile,
     .headerContainerSmallMobile,
     .logoSmallestMobile, 
@@ -189,7 +189,7 @@
         position: relative;
         top: 0;
         left: 0;
-        height: 20vh;
+        height: 30vh;
         width: 100%;
         align-items: center;
         margin-bottom: 10px;
@@ -219,6 +219,7 @@
         height: 100%;
         max-height: 100%;
         width: auto;
+        padding-right: 2vwa;
     }
 
     .navbar {
@@ -248,7 +249,7 @@
     .navbarIcons i.fa-linkedin {
         min-width: 30px;
         min-height: 30px;
-        font-size: clamp(40px, 8vh, 80px);
+        font-size: clamp(40px, 16vh, 80px);
         color: #fff;
         text-decoration: none;
         padding: 1vh;

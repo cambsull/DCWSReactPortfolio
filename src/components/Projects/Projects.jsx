@@ -20,7 +20,7 @@ function Projects() {
             title: 'Lewis-Clark Valley Christmas Bird Count',
             description: 'This is the homepage for the popular Christmas Bird Count program in the Lewis-Clark Valley, which now serves over 61,000 people!',
             image: projectImage2,
-            link: 'https://lewistoncbc.netlify.app/'
+            link: 'https://lcvalleycbc.com/'
         },
         {
             title: 'Steam Web API Library',

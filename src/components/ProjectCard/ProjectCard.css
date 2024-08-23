@@ -1,3 +1,13 @@
+@media only screen and (min-width: 1200px){
+    .projectCard,
+    .projectCardImage,
+    .projectCardImage img,
+    .projectButton {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1199px){
 .projectCard {
  width: 100%;
  margin: auto;
@@ -19,9 +29,6 @@
 }
 
 .projectButton {
-    margin-bottom: 8px;
-    height: 2rem;
-    width: 8rem;
-
+   display: none;
 }
-
+}

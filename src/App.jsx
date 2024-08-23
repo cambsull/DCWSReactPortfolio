@@ -19,6 +19,7 @@ function App() {
 
   const [sectionToDisplay, setSectionToDisplay] = useState('');
   const [backgroundActive, setBackgroundActive] = useState(false);
+  const [activeSection, setActiveSection] = useState('about');
 
   const handleChangeDisplay = (section) => {
     if (section !== sectionToDisplay) {
@@ -29,16 +30,18 @@ function App() {
 
       setTimeout(() => {
         setBackgroundActive(false);
-      }, 425); 
+      }, 425); // Additional time for the background to stay blurred so the transition is less jarring.
+      setActiveSection(section);
     }
+   
   }
 
   return (
     <>
       <Header />
-      <SecondaryNavbar sectionChange={handleChangeDisplay} activeSection={sectionToDisplay} />
+      <SecondaryNavbar sectionChange={handleChangeDisplay} activeSection={activeSection} />
       <div className={`background-blur ${backgroundActive ? 'background-blur-active' : ''}`} />
-      <TransitionGroup component={null}>
+      <TransitionGroup>
         {sectionToDisplay === 'projects' && (
           <CSSTransition
             key="projects"

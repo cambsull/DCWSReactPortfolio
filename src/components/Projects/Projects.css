@@ -1,3 +1,11 @@
+@media only screen and (min-width: 1200px) {
+    #projects,
+    .projectCardDisplay {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
 #projects {
     display: block;
     text-align: center;
@@ -14,4 +22,5 @@
     gap: 20px;
     width: 100%;
     margin-top: 20px;
+}
 }

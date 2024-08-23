@@ -1,3 +1,14 @@
+@media only screen and (min-width: 1200px) {
+    #certifications {
+        display: none;
+    }
+    
+    .certificationCardDisplay {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1199px){
 #certifications {
     display: block;
     text-align: center;
@@ -14,4 +25,5 @@
     gap: 20px;
     width: 100%;
     margin-top: 20px;
+}
 }
