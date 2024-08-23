@@ -3,13 +3,21 @@
   }
   .fade-enter-active {
     opacity: 1;
+<<<<<<< HEAD
     transition: opacity 700ms;
+=======
+    transition: opacity 300ms;
+>>>>>>> df359a8ad319addea921e898c239ef69dc10ec0c
   }
   .fade-exit {
     opacity: 1;
   }
   .fade-exit-active {
     opacity: 0;
+<<<<<<< HEAD
     transition: opacity 700ms;
+=======
+    transition: opacity 300ms;
+>>>>>>> df359a8ad319addea921e898c239ef69dc10ec0c
   }
   
