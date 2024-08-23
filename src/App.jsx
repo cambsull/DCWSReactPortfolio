@@ -23,11 +23,11 @@ function App() {
       setBackgroundActive(true);
       setTimeout(() => {
         setSectionToDisplay(section);
-      }, 300);
+      }, 200);
 
       setTimeout(() => {
         setBackgroundActive(false);
-      }, 525); 
+      }, 425); 
     }
   }
 
@@ -40,7 +40,7 @@ function App() {
         {sectionToDisplay === 'projects' && (
           <CSSTransition
             key="projects"
-            timeout={300}
+            timeout={200}
             classNames="fade"
           >
             <div>
@@ -51,7 +51,7 @@ function App() {
         {sectionToDisplay === 'certifications' && (
           <CSSTransition
             key="certifications"
-            timeout={300}
+            timeout={200}
             classNames="fade"
           >
             <div>
@@ -62,7 +62,7 @@ function App() {
         {(sectionToDisplay === 'about' || sectionToDisplay === '') && (
           <CSSTransition
             key="about"
-            timeout={300}
+            timeout={200}
             classNames="fade"
           >
             <div>
