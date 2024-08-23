@@ -1,13 +1,14 @@
 .certificationCard {
     width: 100%;
     margin: auto;
-    text-align: center;
+    text-align: left;
     border-bottom: 1px solid white;
    }
    
    .certificationCardImage {
        width: 100%;
        border-radius: 10px;
+       box-shadow: 2px 2px 10px #111;
    }
    
    .certificationCardImage img {

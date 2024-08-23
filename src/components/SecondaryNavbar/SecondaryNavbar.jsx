@@ -1,19 +1,18 @@
 import './SecondaryNavbar.css'
 
-function SecondaryNavbar() {
+function SecondaryNavbar({sectionChange}) {
+
     return (
         <>
             <div className="secondaryNavbarSmallestMobile">
-            <a href="#about" className="navIconLink" alt="about">
-                    <i className="fas fa-user"></i>
-                </a>
-                <a href="#projects" className="navIconLink" alt="projects">
-                    <i className="fas fa-briefcase"></i>
-                </a>
-                <a href="#certifications" className="navIconLink" alt="certifications">
-                    <i className="fas fa-scroll"></i>
-                </a>
-               
+           
+                    <i className="fas fa-user" onClick={() => sectionChange('about')}></i>
+
+                    <i className="fas fa-briefcase" onClick={() => sectionChange('projects')}></i>
+    
+                    <i className="fas fa-scroll" onClick={() => sectionChange('certifications')}></i>
+             
+    
             </div>
         </>
     )
