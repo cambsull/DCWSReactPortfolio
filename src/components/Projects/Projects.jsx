@@ -1,4 +1,3 @@
-import React from 'react';
 import ProjectCard from '../ProjectCard/ProjectCard.jsx';
 import projectImage1 from '../../assets/projectImage1.png';
 import projectImage2 from '../../assets/projectImage2.png';

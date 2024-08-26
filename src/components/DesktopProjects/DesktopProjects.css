@@ -1,0 +1,96 @@
+@media only screen and (max-width: 1199px) {
+
+    .desktopProjectsPrimaryContainer,
+    .desktopProjectsCentralCard,
+    .desktopAboutCard,
+    .desktopSpacer,
+    .titlePic,
+    .titlePic img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1349px) {
+    .desktopProjectsPrimaryContainer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .desktopProjectsCentralCard {
+        display: flex;
+        border-radius: 12px;
+        width: 90%;
+        justify-content: center;
+        background-color: #4C42A3;
+    }
+    
+    .desktopAboutCard {
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        padding: 12px;
+        margin: 6px;
+        width: 60%;
+        align-items: center;
+    }
+    
+    .desktopSpacer {
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+        margin: 12px;
+    }
+    
+    .desktopSpacerLight {
+        display: flex;
+        flex-direction: column;
+        padding: 3px;
+        margin: 12px;
+        border-radius: 12px;
+        width: 100%;
+        background-color: #DDD;
+    }    
+}
+
+@media only screen and (min-width: 1350px) {
+.desktopProjectsPrimaryContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.desktopProjectsCentralCard {
+    display: flex;
+    border-radius: 12px;
+    width: 90%;
+    justify-content: center;
+    background-color: #4C42A3;
+}
+
+.desktopAboutCard {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 6px;
+    width: 60%;
+    align-items: center;
+}
+
+.desktopSpacer {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    margin: 12px;
+}
+
+.desktopSpacerLight {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    margin: 12px;
+    border-radius: 12px;
+    width: 100%;
+    background-color: #DDD;
+}
+
+}

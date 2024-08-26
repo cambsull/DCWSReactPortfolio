@@ -3,7 +3,7 @@ import React from 'react';
 import certImage4 from '../../assets/certImage4.png';
 import './LatestCertification.css';
 
-function LatestCertification() {
+function LatestCertification({ changeDesktopDisplay }) {
     const certificationData = [
         {
             title: 'Foundational C# with Microsoft',
@@ -19,8 +19,8 @@ function LatestCertification() {
     return (<>
         <div className="latestCertificationCard">
             <div className="certificationCardDesktop">
-            <h2>Latest Certification</h2>
-                <img src={certificationData[0].image} alt={certificationData[0].title} onClick={() => window.open(link, '_blank')} className="certificationCardDesktopImage" />
+                <h2>Latest Certification</h2>
+                <img src={certificationData[0].image} alt={certificationData[0].title} onClick={changeDesktopDisplay} className="certificationCardDesktopImage" />
                 <div className="certificationCardDesktopContent">
                     <h3>{certificationData[0].title}</h3>
                     <p>{certificationData[0].description}</p>

@@ -4,8 +4,10 @@ import Header from './components/Header/Header';
 import Projects from './components/Projects/Projects.jsx';
 import SecondaryNavbar from './components/SecondaryNavbar/SecondaryNavbar';
 import DesktopContent from './components/DesktopContent/DesktopContent.jsx';
+import DesktopProjects from './components/DesktopProjects/DesktopProjects.jsx';
+import DesktopCertifications from './components/DesktopCertifications/DesktopCertifications.jsx';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import './App.css';
@@ -14,12 +16,14 @@ import './App.css';
 // TODO: Reduce image size
 // TODO: Non-mobile designs (DesktopContent)
 // TODO: iPad portrait mode and other similar sizes
+// TODO: DesktopProjects and DesktopCertifications -- make look good, handle getting back to about/home section.
 
 function App() {
 
   const [sectionToDisplay, setSectionToDisplay] = useState('');
   const [backgroundActive, setBackgroundActive] = useState(false);
   const [activeSection, setActiveSection] = useState('about');
+  const [desktopSectionToDisplay, setDesktopSectionToDisplay] = useState('');
 
   const handleChangeDisplay = (section) => {
     if (section !== sectionToDisplay) {
@@ -33,8 +37,16 @@ function App() {
       }, 425); // Additional time for the background to stay blurred so the transition is less jarring.
       setActiveSection(section);
     }
-   
   }
+
+  const handleChangeDesktopSection = (section) => {
+    setDesktopSectionToDisplay(section);
+  }
+
+  useEffect(() => {
+    console.log('Desktop state:', desktopSectionToDisplay);
+  }, [desktopSectionToDisplay]);
+
 
   return (
     <>
@@ -75,8 +87,24 @@ function App() {
             </div>
           </CSSTransition>
         )}
+          <CSSTransition
+          key={desktopSectionToDisplay}
+          timeout={200}
+          classNames="fade"
+        >
+          <div>
+            {(desktopSectionToDisplay === '' || desktopSectionToDisplay === 'desktopAbout') && (
+              <DesktopContent onChangeSection={handleChangeDesktopSection} />
+            )}
+            {desktopSectionToDisplay === 'desktopProjects' && (
+              <DesktopProjects />
+            )}
+            {desktopSectionToDisplay === 'desktopCertifications' && (
+              <DesktopCertifications />
+            )}
+          </div>
+        </CSSTransition>
       </TransitionGroup>
-      <DesktopContent />
     </>
   );
 }
