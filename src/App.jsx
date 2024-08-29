@@ -24,15 +24,10 @@ function App() {
 
       setTimeout(() => {
         setBackgroundActive(false);
-      }, 425); // Additional time for the background to stay blurred so the transition is less jarring.
+      }, 425); 
       setActiveSection(section);
     }
   }
-
-  useEffect(() => {
-    console.log('Desktop state:', desktopSectionToDisplay);
-  }, [desktopSectionToDisplay]);
-
 
   return (
     <>
