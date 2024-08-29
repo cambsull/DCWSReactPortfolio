@@ -3,21 +3,11 @@ import Certifications from './components/Certifications/Certifications.jsx';
 import Header from './components/Header/Header';
 import Projects from './components/Projects/Projects.jsx';
 import SecondaryNavbar from './components/SecondaryNavbar/SecondaryNavbar';
-import DesktopContent from './components/DesktopContent/DesktopContent.jsx';
-import DesktopProjects from './components/DesktopProjects/DesktopProjects.jsx';
-import DesktopCertifications from './components/DesktopCertifications/DesktopCertifications.jsx';
 
 import { useState, useEffect } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import './App.css';
-
-
-// TODO: Reduce image size
-// TODO: Non-mobile designs (DesktopContent)
-// TODO: iPad portrait mode and other similar sizes
-// TODO: DesktopProjects and DesktopCertifications -- make look good, handle getting back to about/home section.
-// TODO: Add newly acquired certificate(s)
 
 function App() {
 
