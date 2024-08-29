@@ -14,7 +14,6 @@ function App() {
   const [sectionToDisplay, setSectionToDisplay] = useState('');
   const [backgroundActive, setBackgroundActive] = useState(false);
   const [activeSection, setActiveSection] = useState('about');
-  const [desktopSectionToDisplay, setDesktopSectionToDisplay] = useState('');
 
   const handleChangeDisplay = (section) => {
     if (section !== sectionToDisplay) {
@@ -28,10 +27,6 @@ function App() {
       }, 425); // Additional time for the background to stay blurred so the transition is less jarring.
       setActiveSection(section);
     }
-  }
-
-  const handleChangeDesktopSection = (section) => {
-    setSectionToDisplay(section);
   }
 
   useEffect(() => {
