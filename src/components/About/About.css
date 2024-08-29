@@ -125,6 +125,7 @@
     .latestProject,
     .latestCertification {
         flex: 1;
+        cursor: pointer;
     }
 
     .desktopTechStack {
@@ -246,6 +247,7 @@
 .latestProject,
 .latestCertification {
     flex: 1;
+    cursor: pointer;
 }
 
 .techEntry {

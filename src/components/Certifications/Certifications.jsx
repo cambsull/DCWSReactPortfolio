@@ -1,6 +1,6 @@
 import React from 'react';
 import CertificationCard from '../CertificationCard/CertificationCard.jsx';
-import certImage1 from '../../assets/newAssets/certImage1.gif';
+import certImage1 from '../../assets/newAssets/certImage1.GIF';
 import certImage2 from '../../assets/newAssets/certImage2.gif';
 import certImage3 from '../../assets/newAssets/certImage3.gif';
 import certImage4 from '../../assets/newAssets/certImage4.gif';
