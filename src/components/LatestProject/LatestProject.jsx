@@ -1,9 +1,9 @@
 import React from 'react';
 
-import projectImage1Desktop from '../../assets/projectImage1Desktop.png';
+import projectImage1Desktop from '../../assets/newAssets/projectImage1.gif';
 import './LatestProject.css';
 
-function LatestProject() {
+function LatestProject({handleChangeDisplay}) {
     const projectData = [
         {
             title: 'Aquifer PE',
@@ -19,7 +19,7 @@ function LatestProject() {
         <div className="latestProjectCard">
             <div className="projectCardDesktop">
             <h2>Latest Project</h2>
-                <img src={projectData[0].image} alt={projectData[0].title} onClick={() => window.open(link, '_blank')} className="projectCardDesktopImage" />
+                <img src={projectData[0].image} alt={projectData[0].title} className="projectCardDesktopImage" onClick={handleChangeDisplay}/>
                 <div className="projectCardDesktopContent">
                     <h3>{projectData[0].title}</h3>
                     <p>{projectData[0].description}</p>

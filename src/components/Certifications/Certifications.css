@@ -1,14 +1,4 @@
-@media only screen and (min-width: 1200px) {
-    #certifications {
-        display: none;
-    }
-    
-    .certificationCardDisplay {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 1199px){
+@media only screen and (max-width: 800px){
 #certifications {
     display: block;
     text-align: center;
@@ -26,4 +16,42 @@
     width: 100%;
     margin-top: 20px;
 }
+
+.certificationCardContent h3 {
+    text-align: center;
+}
+
+.certificationCardContent p {
+    text-align: left;
+}
+}
+
+@media only screen and (min-width: 801px){
+    #certifications {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #6D52FF;
+        border-radius: 10px 0px 10px 0px;
+    }
+    
+    .certificationCardContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .certificationCardDisplay {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 70%;
+        margin-top: 20px;
+    }
 }

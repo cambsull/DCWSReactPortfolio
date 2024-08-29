@@ -1,13 +1,4 @@
-@media only sscreen and (min-width: 1200px){
-    .certificationCard,
-    .certificationCardImage,
-    .certificationCardImage img,
-    .certificationButton {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 1199px){
+@media only screen and (max-width: 800px){
 .certificationCard {
     width: 100%;
     margin: auto;
@@ -22,7 +13,7 @@
    }
    
    .certificationCardImage img {
-       width: 80%;
+       width: 100%;
        height: auto; 
        display: block;
        margin: 0 auto; 
@@ -32,8 +23,49 @@
        margin-bottom: 8px;
        height: 2rem;
        width: 8rem;
-   
    }
+}
+
+@media only screen and (min-width: 801px) {
+    .certificationCard {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin: auto;
+        text-align: left;
+       }
+       
+       .certificationCardImage {
+           width: 100%;
+           border-radius: 10px;
+           box-shadow: 2px 2px 10px #111;
+           margin-right: 2rem;
+       }
+       
+       .certificationCardImage img {
+           width: 100%;
+           height: auto; 
+           display: block;
+           margin: 0 auto; 
+       }
+       
+       .certificationButton {
+           margin-bottom: 8px;
+           height: 2rem;
+           width: 8rem;
+       }
+
+       .certificationCardContent {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+       }
+
+       .certificationCardContent p {
+        display: block;
+        text-align: left;
+       }
 }
 
    

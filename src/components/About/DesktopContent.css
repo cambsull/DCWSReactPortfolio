@@ -14,6 +14,7 @@
     .desktopPrimaryContainer {
         display: flex;
         justify-content: center;
+        z-index: 1;
     }
 
     .desktopCentralCard {
@@ -42,18 +43,29 @@
         margin: 12px;
     }
 
+    .desktopSpacerLight {
+        display: flex;
+        flex-direction: column;
+        padding: 3px;
+        margin: 12px;
+        border-radius: 12px;
+        width: 100%;
+        background-color: #DDD;
+    }
+    
+
     .titlePic {
         display: flex;
         width: 100%;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 
     .titlePic h1 {
-        font-size: 1.5rem;
-        padding-right: 1.25rem;
-        padding-left: 0.5rem;
+        font-size: 2rem;
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
     }
 
     .titlePic img {
@@ -86,6 +98,40 @@
     .latestCertification {
         flex: 1;
     }
+
+    .desktopTechStack {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+        width: 100%;
+    
+    }
+
+    .desktopTechStack i {
+        padding-left: 2rem;
+        padding-right: 1rem;
+        font-size: 3rem;
+    }
+
+    .techEntry {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+
+    }
+    
+    .techEntry p {
+        padding-left: 1.2rem;
+        font-size: 1.25rem;
+        margin-top: -0.02rem;
+    
+    }
+    
+
 }
 
 @media only screen and (min-width: 1350px) {
@@ -117,6 +163,16 @@
     flex-direction: column;
     padding: 12px;
     margin: 12px;
+}
+
+.desktopSpacerLight {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    margin: 12px;
+    border-radius: 12px;
+    width: 100%;
+    background-color: #DDD;
 }
 
 .titlePic {
@@ -164,5 +220,33 @@
     flex: 1;
 }
 
+.techEntry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
 
+.techEntry p {
+    padding-left: 1.2rem;
+    font-size: 1.25rem;
+    margin-top: -0.02rem;
+
+}
+
+.desktopTechStack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    width: 100%;
+}
+
+.desktopTechStack i {
+    padding-left: 2rem;
+    padding-right: 1rem;
+    font-size: 3rem;
+}
 }

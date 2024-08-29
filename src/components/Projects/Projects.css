@@ -1,26 +1,57 @@
-@media only screen and (min-width: 1200px) {
-    #projects,
-    .projectCardDisplay {
-        display: none;
+@media only screen and (max-width: 800px){
+    #projects {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #6D52FF;
+        border-radius: 10px 0px 10px 0px;
     }
-}
-
-@media only screen and (max-width: 1199px) {
-#projects {
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #6D52FF;
-    border-radius: 10px 0px 10px 0px;
-}
-
-.projectCardDisplay {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    margin-top: 20px;
-}
-}
+    
+    .projectCardDisplay {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .projectCardContent h3 {
+        text-align: center;
+    }
+    
+    .projectCardContent p {
+        text-align: left;
+    }
+    }
+    
+    @media only screen and (min-width: 801px){
+        #projects {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #6D52FF;
+            border-radius: 10px 0px 10px 0px;
+        }
+        
+        .projectCardContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .projectCardDisplay {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            width: 70%;
+            margin-top: 20px;
+        }
+    }
