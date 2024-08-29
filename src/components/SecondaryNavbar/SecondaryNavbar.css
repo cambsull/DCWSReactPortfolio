@@ -69,13 +69,6 @@
         display: none;
     }
 
-    .secondaryNavbar {
-        display: none;
-    }
-
-
-
-    /*
     .navButton {
         background-color: #6D52FF; 
         color: white;
@@ -86,8 +79,11 @@
         cursor: pointer;
         transition: background-color 0.3s ease, transform 0.2s ease;
       }
+
+      .active {
+        color: gold;
+      }
       
- 
       .navButton:hover {
         background-color: #7f63ff; 
         transform: translateY(-2px);
@@ -109,6 +105,7 @@
         background-color: #4C42A3;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 0.5rem;
     }
 
     .secondaryNavbar div {
@@ -119,9 +116,7 @@
     }
 
     .secondaryNavbar i {
-        color: #fff;
-        font-size: 1.5rem;
-        transition: color 0.3s ease-in-out;
+        display: none;
     }
 
     .secondaryNavbar h2 {
@@ -129,18 +124,19 @@
         font-size: 1.2rem;
         margin: 0;
         transition: color 0.3s ease-in-out;
+        cursor: pointer;
     }
 
     .secondaryNavbar i:hover,
     .secondaryNavbar h2:hover {
-        color: #e0e0e0;
+        color: gold;
     }
 
     .secondaryNavbar .active {
-        color: #2C2A4A;
+        color: gold;
         font-weight: bold;
     }
 
-    */
+    
     
 }

@@ -1,20 +1,14 @@
 import ProjectCard from '../ProjectCard/ProjectCard.jsx';
-import projectImage1 from '../../assets/projectImage1.png';
-import projectImage2 from '../../assets/projectImage2.png';
-import projectImage3 from '../../assets/projectImage3.png';
-import projectImage4 from '../../assets/projectImage4.png';
+import projectImage1 from '../../assets/newAssets/projectImage1.gif';
+import projectImage2 from '../../assets/newAssets/projectImage2.gif';
+import projectImage3 from '../../assets/newAssets/projectImage3.gif';
+import projectImage4 from '../../assets/newAssets/projectImage4.gif';
 
 import './Projects.css';
 
 function Projects() {
 
     const projectData = [
-        {
-            title: 'Aquifer PE',
-            description: 'Aquifer PE is a recruitment platform focused on the engineering sector.',
-            image: projectImage1,
-            link: 'https://aquiferpe.com'
-        },
         {
             title: 'Lewis-Clark Valley Christmas Bird Count',
             description: 'This is the homepage for the popular Christmas Bird Count program in the Lewis-Clark Valley, which now serves over 61,000 people!',
@@ -32,12 +26,18 @@ function Projects() {
             description: 'The ADHD Recipe Finder (still in development) is a free tool that uses the Edamam API to search over 900,000 recipes, and then sorts them based on an algorithm that determines their relative complexity.',
             image: projectImage4,
             link: 'https://github.com/cambsull/adhdRecipeFinder'
+        },
+        {
+            title: 'Aquifer PE',
+            description: 'Aquifer PE is a recruitment platform focused on the engineering sector.',
+            image: projectImage1,
+            link: 'https://aquiferpe.com'
         }
     ];
 
     return (
         <div id="projects">
-            <h2>Projects</h2>
+            <h2 id="projectTop">Projects</h2>
             <div className="projectCardDisplay">
                 {projectData.map((project, index) => (
                     <ProjectCard 

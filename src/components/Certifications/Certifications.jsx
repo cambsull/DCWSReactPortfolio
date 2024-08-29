@@ -1,9 +1,10 @@
 import React from 'react';
 import CertificationCard from '../CertificationCard/CertificationCard.jsx';
-import certImage1 from '../../assets/certImage1.png';
-import certImage2 from '../../assets/certImage2.png';
-import certImage3 from '../../assets/certImage3.png';
-import certImage4 from '../../assets/certImage4.png';
+import certImage1 from '../../assets/newAssets/certImage1.gif';
+import certImage2 from '../../assets/newAssets/certImage2.gif';
+import certImage3 from '../../assets/newAssets/certImage3.gif';
+import certImage4 from '../../assets/newAssets/certImage4.gif';
+import certImage5 from '../../assets/newAssets/certImage5.gif';
 
 import './Certifications.css';
 
@@ -38,24 +39,33 @@ function Certifications() {
             description: 'C#, C# as a backend language, Object-Oriented Programming concepts',
             image: certImage4,
             link: 'https://www.freecodecamp.org/certification/cambsull/foundational-c-sharp-with-microsoft'
+        },
+        {
+            title: 'Fundamentals of Cybersecurity Skill Path',
+            issuer: 'Codecademy',
+            description: 'Cybersecurity essentials, network fundamentals, penetration testing.',
+            image: certImage5,
+            link: 'https://www.codecademy.com/profiles/cgsullivan1/certificates/06984a073b064e61879cca3e82a9b3d2'
         }
     ];
 
     return (
         <div id="certifications">
             <h2>Certifications</h2>
-            <div className="certificationCardDisplay">
-                {certificationData.map((certification, index) => (
-                    <CertificationCard 
-                    key={index}
-                    title={certification.title}
-                    issuer={certification.issuer}
-                    description={certification.description}
-                    image={certification.image}
-                    link={certification.link}
-                    />
+            <div className="certificationCardContainer">
+                <div className="certificationCardDisplay">
+                    {certificationData.map((certification, index) => (
+                        <CertificationCard
+                            key={index}
+                            title={certification.title}
+                            issuer={certification.issuer}
+                            description={certification.description}
+                            image={certification.image}
+                            link={certification.link}
+                        />
 
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     );

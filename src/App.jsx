@@ -17,6 +17,7 @@ import './App.css';
 // TODO: Non-mobile designs (DesktopContent)
 // TODO: iPad portrait mode and other similar sizes
 // TODO: DesktopProjects and DesktopCertifications -- make look good, handle getting back to about/home section.
+// TODO: Add newly acquired certificate(s)
 
 function App() {
 
@@ -40,7 +41,7 @@ function App() {
   }
 
   const handleChangeDesktopSection = (section) => {
-    setDesktopSectionToDisplay(section);
+    setSectionToDisplay(section);
   }
 
   useEffect(() => {
@@ -83,27 +84,10 @@ function App() {
             classNames="fade"
           >
             <div>
-              <About />
+              <About onChangeSection={handleChangeDisplay} />
             </div>
           </CSSTransition>
         )}
-          <CSSTransition
-          key={desktopSectionToDisplay}
-          timeout={200}
-          classNames="fade"
-        >
-          <div>
-            {(desktopSectionToDisplay === '' || desktopSectionToDisplay === 'desktopAbout') && (
-              <DesktopContent onChangeSection={handleChangeDesktopSection} />
-            )}
-            {desktopSectionToDisplay === 'desktopProjects' && (
-              <DesktopProjects />
-            )}
-            {desktopSectionToDisplay === 'desktopCertifications' && (
-              <DesktopCertifications />
-            )}
-          </div>
-        </CSSTransition>
       </TransitionGroup>
     </>
   );
