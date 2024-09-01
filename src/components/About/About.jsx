@@ -57,7 +57,7 @@ function About({onChangeSection}) {
                             <p>Python</p>
                         </div>
                         <div className="techEntry">
-                            <i class="fa-brands fa-microsoft" title=".NET/C#"></i>
+                            <i class="fas fa-code" title="C#"></i>
                             <p>.NET/C#</p>
                         </div>
                         <div className="techEntry">
