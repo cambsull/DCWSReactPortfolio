@@ -5,6 +5,7 @@ import certImage2 from '../../assets/newAssets/certImage2.gif';
 import certImage3 from '../../assets/newAssets/certImage3.gif';
 import certImage4 from '../../assets/newAssets/certImage4.gif';
 import certImage5 from '../../assets/newAssets/certImage5.gif';
+import certImage6 from '../../assets/newAssets/certImage6.gif';
 
 import './Certifications.css';
 
@@ -46,7 +47,15 @@ function Certifications() {
             description: 'Cybersecurity essentials, network fundamentals, penetration testing.',
             image: certImage5,
             link: 'https://www.codecademy.com/profiles/cgsullivan1/certificates/06984a073b064e61879cca3e82a9b3d2'
+        },
+        {
+            title: 'Scan Systems with Nmap Skill Path',
+            issuer: 'Codecademy',
+            description: 'Scanning systems with Nmap, applied cybersecurity concepts',
+            image: certImage6,
+            link: 'https://www.codecademy.com/profiles/cgsullivan1/certificates/8a755949f5374c06b088f439d70e9334'
         }
+
     ];
 
     return (
