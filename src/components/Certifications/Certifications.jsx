@@ -51,7 +51,7 @@ function Certifications() {
         {
             title: 'Scan Systems with Nmap Skill Path',
             issuer: 'Codecademy',
-            description: 'Scanning systems with Nmap, applied cybersecurity concepts.',
+            description: 'Scanning systems with Nmap, LUA scripting, applied cybersecurity concepts.',
             image: certImage6,
             link: 'https://www.codecademy.com/profiles/cgsullivan1/certificates/8a755949f5374c06b088f439d70e9334'
         }
