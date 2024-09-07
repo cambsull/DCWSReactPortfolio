@@ -1,17 +1,10 @@
 import React from 'react';
 
-import projectImage1Desktop from '../../assets/newAssets/projectImage1.gif';
+import { projectData } from '../Projects/Projects';
 import './LatestProject.css';
 
 function LatestProject({handleChangeDisplay}) {
-    const projectData = [
-        {
-            title: 'Aquifer PE',
-            description: 'Aquifer PE is a recruitment platform focused on the engineering sector.',
-            image: projectImage1Desktop,
-            link: 'https://aquiferpe.com'
-        }
-    ]
+    const latestProject = projectData[projectData.length - 1];
 
     console.log("Rendering LatestProject", projectData);
 
@@ -19,10 +12,10 @@ function LatestProject({handleChangeDisplay}) {
         <div className="latestProjectCard">
             <div className="projectCardDesktop">
             <h2>Latest Project</h2>
-                <img src={projectData[0].image} alt={projectData[0].title} className="projectCardDesktopImage" onClick={handleChangeDisplay}/>
+                <img src={latestProject.image} alt={latestProject.title} className="projectCardDesktopImage" onClick={handleChangeDisplay}/>
                 <div className="projectCardDesktopContent">
-                    <h3>{projectData[0].title}</h3>
-                    <p>{projectData[0].description}</p>
+                    <h3>{latestProject.title}</h3>
+                    <p>{latestProject.description}</p>
                 </div>
             </div>
         </div>
