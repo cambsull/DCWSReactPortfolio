@@ -7,6 +7,7 @@ import certImage4 from '../../assets/newAssets/certImage4.gif';
 import certImage5 from '../../assets/newAssets/certImage5.gif';
 import certImage6 from '../../assets/newAssets/certImage6.gif';
 import certImage7 from '../../assets/newAssets/certImage7.gif';
+import certImage8 from '../../assets/newAssets/certImage8.gif';
 
 import './Certifications.css';
 
@@ -59,8 +60,14 @@ export const certificationData = [
         description: 'Agile and Scrum principles, Agile project management in software engineering.',
         image: certImage7,
         link: 'https://www.codecademy.com/profiles/cgsullivan1/certificates/ed075cf771534a869168252cb83aac1d'
+    },
+    {
+        title: 'Learn TypeScript Course',
+        issuer: 'Codecademy',
+        description: 'TypeScript, complex types, union types, interface implementation, type narrowing',
+        image: certImage8,
+        link: 'https://www.codecademy.com/profiles/cgsullivan1/certificates/56fb1e71303e37b643bb1905f31c8a09'
     }
-
 ];
 
 
