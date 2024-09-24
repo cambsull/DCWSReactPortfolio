@@ -64,7 +64,7 @@ export const certificationData = [
     {
         title: 'Learn TypeScript Course',
         issuer: 'Codecademy',
-        description: 'TypeScript, complex types, union types, interface implementation, type narrowing',
+        description: 'TypeScript, complex types, union types, interface implementation, type narrowing.',
         image: certImage8,
         link: 'https://www.codecademy.com/profiles/cgsullivan1/certificates/56fb1e71303e37b643bb1905f31c8a09'
     }
