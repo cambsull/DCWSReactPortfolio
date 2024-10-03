@@ -1,8 +1,7 @@
 import ProjectCard from '../ProjectCard/ProjectCard.jsx';
-import projectImage1 from '../../assets/newAssets/projectImage1.gif';
 import projectImage2 from '../../assets/newAssets/projectImage2.gif';
 import projectImage3 from '../../assets/newAssets/projectImage3.gif';
-import projectImage4 from '../../assets/newAssets/projectImage4.gif';
+import projectImage4 from '../../assets/newAssets/rco.gif';
 import './Projects.css';
 
 export const projectData = [
@@ -19,16 +18,10 @@ export const projectData = [
         link: 'https://www.npmjs.com/package/swalib'
     },
     {
-        title: 'ADHD Recipe Finder',
-        description: 'The ADHD Recipe Finder (still in development) is a free tool that uses the Edamam API to search over 900,000 recipes, and then sorts them based on an algorithm that determines their relative complexity.',
+        title: 'Recipe Complexity Optimizer',
+        description: 'The Recipe Complexity Optimizer is a free tool that sorts recipes based on an algorithm that determines their relative complexity.',
         image: projectImage4,
-        link: 'https://github.com/cambsull/adhdRecipeFinder'
-    },
-    {
-        title: 'Aquifer PE',
-        description: 'Aquifer PE is a recruitment platform focused on the engineering sector.',
-        image: projectImage1,
-        link: 'https://aquiferpe.com'
+        link: 'https://github.com/cambsull/Recipe-Complexity-Optimizer/tree/main'
     }
 ];
 
